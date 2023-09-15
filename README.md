@@ -1,3 +1,6 @@
+> [!WARNING]
+> The following is my attempt to update the links and the formatting (slightly) in this document. The information on the linked pages is no longer necessarily aligned with the content that this project assumed.
+
 
 		The OSKit - Flux Operating System Toolkit
 		   Version 0.97 - January 15, 1999
@@ -101,13 +104,14 @@ script from there. The introductory section of the OSKit documentation
 describes the OSKit specific options to configure in detail. As an
 example, to configure the OSKit on a FreeBSD machine, generating a.out
 format, you would run configure as follows:
-
-  /somepath/oskit/configure --prefix=/somepath/install \
+```
+/somepath/oskit/configure --prefix=/somepath/install \
 	--build=i586-freebsd --host=i386-mach
-
+```
 On Linux, building ELF format, you'd simply do:
-	/somepath/oskit/configure --prefix=/somepath/install
-
+```
+/somepath/oskit/configure --prefix=/somepath/install
+```
 Once the OSKit is configured, you can proceed to build the OSKit by
 going to the directory you have chosen to build it in, and running GNU
 "make" (e.g., just "make" on Linux systems, or "gmake" on BSD
@@ -116,10 +120,10 @@ OSKit binaries and header files to make it publicly available.
 
 Disk usage:
 
--Source and doc tree is 7.5M compressed, 30.5M uncompressed.
--ELF object tree without debug, without profile, without docs: 48M.
- The examples dir is 20M of that.
--ELF object tree with debug, without profile, without docs: 221M.
+- Source and doc tree is 7.5M compressed, 30.5M uncompressed.
+- ELF object tree without debug, without profile, without docs: 48M.
+  The examples dir is 20M of that.
+- ELF object tree with debug, without profile, without docs: 221M.
 
 ---------------------------------------------------------------------------
 
@@ -134,7 +138,7 @@ and run GNU make.
 
 The resulting hello binary conforms to the "multiboot" standard, and
 is immediately ready to boot with a multiboot compliant loader such as
-GRUB (www.uruk.org/grub/). You can also use the OSKit's "netboot" loader,
+GRUB (https://www.gnu.org/software/grub/). You can also use the OSKit's "netboot" loader,
 which can directly load multiboot images across the network. 
 
 Other boot formats supported by the OSKit are Linux, Mach, and BSD (MS-DOS is
@@ -145,9 +149,9 @@ configured for the appropriate host.  Due to the extra difficulty and delicacy
 of building them they are also provided in binary form, in
 ftp://flux.cs.utah.edu/flux/oskit/boot/.  As an example, to convert the
 hello kernel into the format required by the BSD and Mach boot loaders:
-
-	/somepath/install/bin/mkbsdimage hello
-
+```
+/somepath/install/bin/mkbsdimage hello
+```
 Note that by default, the resulting image is placed in a file called
 "Image" in the current directory. This image can then be copied to the
 root partition of your machine, and booted like any other kernel. In
@@ -180,9 +184,9 @@ across the network. There are several requirements for using NetBoot:
 
 If all of these requirements are satisfied, then you can boot the
 hello kernel across the network as follows:
-
-	Netboot: ipaddr:/somepath/examples/x86/hello
-
+```
+Netboot: ipaddr:/somepath/examples/x86/hello
+```
 --------------------------------------------------------------------------
 
 BSD Boot Support:
@@ -193,15 +197,15 @@ That way, you can build your oskit with ELF tools, but write out an
 I386Mach format adaptor that is suitable for the BSD loader. The best
 approach we found is to take a vanilla binutils 2.9.1, and configure
 it as follows (assuming a FreeBSD 3.0 system):
-
-        /build/src/binutils-2.9.1/configure --prefix=/build/tools
-                --target=i386-mach \
-                --enable-targets=i386-mach,i386-unknown-freebsdelf3.0
-
+```
+/build/src/binutils-2.9.1/configure --prefix=/build/tools
+	--target=i386-mach \
+	--enable-targets=i386-mach,i386-unknown-freebsdelf3.0
+```
 Then setenv AOUT_LD to:
-
-        /build/tools/bin/i386-mach-ld -m i386mach
-
+```
+/build/tools/bin/i386-mach-ld -m i386mach
+```
 Then configure and build your oskit, which will now include a bsd boot
 adaptor directory, built with ELF tools of course. Then you can take an ELF
 version of netboot (from the same build tree) and run it through a modified
@@ -253,10 +257,12 @@ Cross building:
 
 It's been done at least under HPUX and under our BSD for HP's.
 Should work in general.
-	HPUX:
-		config options: --target=i486-linux --host=hppa1.1-hp-hpux
-		gcc 2.7.2, binutils 2.8.1
-		[ had trouble building libgcc as I recall ]
+HPUX:
+```
+config options: --target=i486-linux --host=hppa1.1-hp-hpux
+```
+gcc 2.7.2, binutils 2.8.1
+[ had trouble building libgcc as I recall ]
 	
 --------------------------------------------------------------------------
 
@@ -265,12 +271,12 @@ Version Information:
 The following is a list of the versions of software from which
 the OSKit derives large chunks of code:
 
-FreeBSD:	2.1.7.x (networking, glue), 2.2.2 (C and math libs)
-NetBSD:		1.2
-Linux:		2.0.29
-x11:		XFree86 3.3.1
-svgalib:	1.3.0
-Mach:		basically what was our "mach4"
+* FreeBSD:	2.1.7.x (networking, glue), 2.2.2 (C and math libs)
+* NetBSD:	1.2
+* Linux:	2.0.29
+* x11:		XFree86 3.3.1
+* svgalib:	1.3.0
+* Mach:		basically what was our "mach4"
 
 --------------------------------------------------------------------------
 
@@ -281,19 +287,22 @@ Send comments, suggestions, bugs, and fixes to oskit-users@cs.utah.edu.
 For messages just to the Utah developers send to oskit@flux.cs.utah.edu.
 
 To be added to appropriate mailing lists, send mail to:
-  oskit-users-request@cs.utah.edu		(oskit users/hackers)
-  oskit-announce-request@cs.utah.edu		(major announcements only)
+
+* oskit-users-request@cs.utah.edu		(oskit users/hackers)
+* oskit-announce-request@cs.utah.edu		(major announcements only)
+
 You do not have to be on both lists at once; mail to the announce list
 also goes to the users list (but not vice versa, of course.)
 
 Archives of the mailing lists are available in
-  MIA ftp://flux.cs.utah.edu/flux/oskit/mail/html/index.html	(HTML)
-  MIA ftp://flux.cs.utah.edu/flux/oskit/mail/index.html		(mbox)
+
+* MIA ftp://flux.cs.utah.edu/flux/oskit/mail/html/index.html	(HTML)
+* MIA ftp://flux.cs.utah.edu/flux/oskit/mail/index.html		(mbox)
 
 
 Have fun!
 
-The Flux Research Group
-Department of Computer Science
-University of Utah
-https://www-old.cs.utah.edu/flux/flux.html
+	The Flux Research Group
+	Department of Computer Science
+	University of Utah
+	https://www-old.cs.utah.edu/flux/flux.html
