@@ -33,8 +33,8 @@ for a quick overview of the components.
 
 
 # SOME COOL EXAMPLES
-With the code available from www.cs.utah.edu/projects/flux/oskit/kaffe/
-the highly portable Kaffe JVM from www.transvirtual.com "just works" on the
+With the code available from https://www-old.cs.utah.edu/flux/janos/kaffe.html
+the highly portable Kaffe JVM from http://www.kaffe.org/ "just works" on the
 bare PC hardware using the OSKit.  Yes, a "Java OS"-- but you can also
 reconfigure the OSKit to run Kaffe/OSKit on top of Unix, which is great for
 debugging.  Almost all the changes are already merged into the mainline Kaffe
@@ -46,11 +46,11 @@ patches for Doom, to get a "DoomOS."
 
 # DOCUMENTATION
 See ANNOUNCE for more quick answers.  For the latest versions of
-those files, look at www.cs.utah.edu/projects/flux/oskit/.  Detailed
+those files, look at https://www-old.cs.utah.edu/flux/oskit/.  Detailed
 instructions on how to install and use the OSKit are contained in Chapter One
 of the document in the `doc' subdir.  Text, Postscript, and 2-up Postscript of
 the 500-page document are in doc/oskit.*.gz.  An HTML version is here at
-doc/html/index.html as well as at www.cs.utah.edu/projects/flux/oskit/doc/.
+doc/html/index.html as well as at https://www-old.cs.utah.edu/flux/oskit/doc.html.
 
 Don't let the size of the doc scare you!  You probably won't need to read
 practically any of it to use the OSKit for simple things.  We provide some 45
@@ -84,7 +84,7 @@ Requirements:
    see the BUGS file.)
 
 4) The GNU linker is required if creating BSD/Mach boot images on FreeBSD 2.x
-   (available at ftp://flux.cs.utah.edu/flux/oskit/boot/bsd/).
+   (available at https://sourceware.org/git/?p=binutils-gdb.git;a=tree;f=ld).
 
 ---------------------------------------------------------------------------
 
@@ -287,8 +287,8 @@ You do not have to be on both lists at once; mail to the announce list
 also goes to the users list (but not vice versa, of course.)
 
 Archives of the mailing lists are available in
-  ftp://flux.cs.utah.edu/flux/oskit/mail/html/index.html	(HTML)
-  ftp://flux.cs.utah.edu/flux/oskit/mail/index.html		(mbox)
+  MIA ftp://flux.cs.utah.edu/flux/oskit/mail/html/index.html	(HTML)
+  MIA ftp://flux.cs.utah.edu/flux/oskit/mail/index.html		(mbox)
 
 
 Have fun!
@@ -296,4 +296,4 @@ Have fun!
 The Flux Research Group
 Department of Computer Science
 University of Utah
-http://www.cs.utah.edu/projects/flux/
+https://www-old.cs.utah.edu/flux/flux.html
