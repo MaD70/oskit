@@ -36,7 +36,7 @@ for a quick overview of the components.
 
 
 # SOME COOL EXAMPLES
-With the code available from https://www-old.cs.utah.edu/flux/janos/kaffe.html
+With the code available from https://www-old.cs.utah.edu/flux/oskit/kaffe.html ~~ https://www-old.cs.utah.edu/flux/janos/kaffe.html ~~
 the highly portable Kaffe JVM from http://www.kaffe.org/ "just works" on the
 bare PC hardware using the OSKit.  Yes, a "Java OS"-- but you can also
 reconfigure the OSKit to run Kaffe/OSKit on top of Unix, which is great for
