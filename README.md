@@ -1,5 +1,7 @@
 > [!WARNING]
 > The following is my attempt to update the links and the formatting (slightly) in this document. The information on the linked pages is no longer necessarily aligned with the context that this project assumed.
+> 
+> For a more recent elaboration of the same idea see [Rump Kernels](https://rumpkernel.github.io/) ([github](https://github.com/rumpkernel)).
 
 
 		The OSKit - Flux Operating System Toolkit
