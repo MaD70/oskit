@@ -1,7 +1,7 @@
 > [!WARNING]
 > The following is my attempt to update the links and the formatting (slightly) in this document. The information on the linked pages is no longer necessarily aligned with the context that this project assumed.
 > 
-> For a more recent elaboration of the same idea see [Rump Kernels](https://rumpkernel.github.io/) ([github](https://github.com/rumpkernel)).
+> For a more recent elaboration of the same idea see [Rump Kernels](https://rumpkernel.github.io/) ([github](https://github.com/rumpkernel)), [Unikernels](https://en.wikipedia.org/wiki/Unikernel) (like [IncludeOS](https://github.com/includeos/IncludeOS), [Gramine](https://github.com/gramineproject/gramine), [LibOS](https://github.com/libos-nuse/linux-libos-tools), [Unikraft](https://github.com/unikraft/unikraft), [MirageOS](https://github.com/mirage/mirage)…).
 
 
 		The OSKit - Flux Operating System Toolkit
